@@ -1,0 +1,28 @@
+# Local OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+
+# Local development output
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local test inputs and generated outputs
+*.docx
+*.pptx
+*.pdf
+papertrail-pdfs.zip
+pdfLab-pdfs.zip

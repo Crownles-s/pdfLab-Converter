@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A private, browser-only DOCX and PPTX to PDF converter.">
+  <title>pdfLab — private PDF conversion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="./" aria-label="pdfLab home"><span class="wordmark-mark">P</span><span>pdfLab</span></a>
+    <div class="header-actions">
+      <button id="theme-toggle" class="icon-button" type="button" aria-label="Switch to dark mode" title="Toggle theme"><span aria-hidden="true">☼</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">CONVERT WITH CONFIDENCE</p>
+        <h1>Your files stay<br><em>your files.</em></h1>
+        <p class="hero-deck">DOCX and PPTX to PDF. No upload required.</p>
+      </div>
+      <div class="hero-aside">
+        <div class="trust-seal"><span class="seal-icon">⌁</span><div><strong>Private by design</strong><small>100% in your browser</small></div></div>
+        <p>Local files. Zero transfer.</p>
+      </div>
+    </section>
+
+    <section class="workspace" aria-labelledby="workspace-title">
+      <div class="section-heading"><div><p class="kicker">01 / ADD FILES</p><h2 id="workspace-title">Start converting</h2></div><span id="file-count" class="count-pill">0 files</span></div>
+      <div id="drop-zone" class="drop-zone" tabindex="0" role="button" aria-label="Choose DOCX or PPTX files">
+        <input id="file-input" type="file" accept=".docx,.pptx,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation" multiple hidden>
+        <div class="drop-icon" aria-hidden="true">↥</div>
+        <div><h3>Drop files here</h3><p>or <button id="browse-button" class="text-button" type="button">browse your device</button></p></div>
+        <div class="file-types"><span>DOCX</span><span>PPTX</span><small>Up to 20 files at a time</small></div>
+      </div>
+      <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+      <div id="queue" class="queue" aria-live="polite"></div>
+      <div class="queue-footer"><p><span class="lock-dot">●</span> Your files never leave this browser</p><button id="convert-button" class="primary-button" type="button" disabled>Convert files <span>→</span></button></div>
+    </section>
+
+    <section class="how-section">
+      <div class="section-heading"><div><p class="kicker">02 / THE DETAILS</p><h2>Quietly powerful, thoughtfully private.</h2></div></div>
+      <div class="detail-grid">
+        <article><span class="detail-number">01</span><h3>Drop, don't upload</h3><p>Files stay on your device.</p></article>
+        <article><span class="detail-number">02</span><h3>One queue, any format</h3><p>Convert one file or a full batch.</p></article>
+        <article><span class="detail-number">03</span><h3>Made for academic work</h3><p>Clean PDFs for papers and presentations.</p></article>
+      </div>
+    </section>
+    <p class="footnote">PPTX fidelity varies for animations, video, SmartArt, and unusual fonts.</p>
+  </main>
+  <footer class="site-footer"><span>pdfLab / Private conversion</span><a href="https://github.com/Crownles-s" target="_blank" rel="noopener noreferrer">GitHub / Crownles-s</a></footer>
+
+  <div id="render-stage" aria-hidden="true"></div>
+  <script src="js/vendor/mammoth.browser.min.js"></script>
+  <script src="js/vendor/html2canvas.min.js"></script>
+  <script src="js/vendor/jspdf.umd.min.js"></script>
+  <script src="js/vendor/jszip.min.js"></script>
+  <script src="js/vendor/fast-xml-parser.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

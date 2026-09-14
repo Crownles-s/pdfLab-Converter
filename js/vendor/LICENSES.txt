@@ -1,0 +1,16 @@
+Third-party browser bundles
+
+Mammoth 1.8.0 — BSD-2-Clause
+https://github.com/mwilliamson/mammoth.js
+
+html2canvas 1.4.1 — MIT
+https://github.com/niklasvh/html2canvas
+
+jsPDF 2.5.1 — MIT
+https://github.com/parallax/jsPDF
+
+JSZip 3.10.1 — MIT OR GPL-3.0
+https://github.com/Stuk/jszip
+
+fast-xml-parser 5.2.5 — MIT
+https://github.com/NaturalIntelligence/fast-xml-parser
