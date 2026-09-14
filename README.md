@@ -97,14 +97,3 @@ Use a current desktop or mobile version of Chrome, Edge, Firefox, or Safari with
 - `localStorage`
 
 Large documents and image-heavy presentations use more memory because rendering happens locally in the browser.
-
-## Maintenance
-
-When updating a vendored dependency:
-
-1. Replace its file in `js/vendor/`.
-2. Update the version and license entry in `js/vendor/LICENSES.txt`.
-3. Update the dependency table above.
-4. Smoke-test one DOCX, one PPTX, an invalid file, and a multi-file ZIP export.
-
-Keep `index.html`, `css/styles.css`, and `js/app.js` free of credentials and environment-specific paths so the folder remains deployable as-is.
